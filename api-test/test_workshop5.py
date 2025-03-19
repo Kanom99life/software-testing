@@ -7,6 +7,8 @@ def api_client():
 	yield session
 	session.close()
 
+
+# pytest -s
 '''
 Task 1
 - Perform a GET request to https://api.zippopotam.us/us/90007
@@ -105,6 +107,7 @@ def test_task4(api_client):
 	assert patch_data.status_code == 200 and patch_data.json()['email'] == "cs364@cs.science.cmu.ac.th"
 	# assert patch_data.json()['email'] == "cs364@cs.science.cmu.ac.th"
 	# print(patch_data.json())
+	# print(patch_data.text)
 	# print("Updated email = ",patch_data.json()['email'])
 
 

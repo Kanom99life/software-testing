@@ -9,6 +9,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import os
 
+# pytest --cache-clear -v
+
 @pytest.fixture
 def driver():
 	driver = webdriver.Chrome()

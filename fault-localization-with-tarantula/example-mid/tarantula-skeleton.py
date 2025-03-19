@@ -80,7 +80,7 @@ def tarantula():
 	sorted_suspiciousness_dict = dict(sorted(suspiciousness_dict.items(), key=lambda item: item[1], reverse=True)[:5])
 
 	for i in sorted_suspiciousness_dict:
-		print(f"{i} suspiciousness : {sorted_suspiciousness_dict[i]}")
+		print(f"{i} suspiciousness : {sorted_suspiciousness_dict[i]:.2f}")
 	# print(f"sorted_suspiciousness_dict = {sorted_suspiciousness_dict}")
 	
 
